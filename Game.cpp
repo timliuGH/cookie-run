@@ -29,8 +29,12 @@ Game::Game()
         << "\nTime to start planning. You know the cookies are on the\n"
         << "kitchen counter, too high for you to reach.\n"
         << "Find items around the house to help you before the sitter\n"
-        << "wakes up.\n" << std::endl;
-    
+        << "wakes up.\n\n"
+        << "Every movement to another room is 1 time unit. Every act of \n"
+        << "inspection is 1 time unit. You have 30 time units before \n"
+        << "the babysitter wakes up.\n" << std::endl;
+
+
     // Create rooms
     playersRoom = new Bedroom("My room", 1);
     hallway = new Hallway("Hallway", 5);
