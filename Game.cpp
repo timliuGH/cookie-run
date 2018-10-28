@@ -34,7 +34,6 @@ Game::Game()
         << "inspection is 1 time unit. You have 30 time units before \n"
         << "the babysitter wakes up.\n" << std::endl;
 
-
     // Create rooms
     playersRoom = new Bedroom("My room", 1);
     hallway = new Hallway("Hallway", 5);
@@ -839,7 +838,7 @@ void Game::map()
         }
     }
 
-    // Add entrances
+    // Add entrances marked with an 'o'
     array[5][12] = array[2][12] = array[6][17] = array[6][27] = 'o';
     array[4][27] = array[5][32] = array[4][39] = 'o';
 
