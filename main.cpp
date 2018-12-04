@@ -17,13 +17,11 @@ int main()
     char user;
 
     // Run game once and prompt for re-play
-    do
-    {
+    do {
         Game game;
         std::cout << "Press 1 to Start or 2 to Exit" << std::endl;
         start = getInt(1, 2);
-        if (start == 1)
-        {
+        if (start == 1) {
             game.clear();
             std::cout << "Here's a map that you drew.\n"
                       << "The o marks an entrance.\n"
@@ -34,14 +32,11 @@ int main()
             game.play();
             std::cout << "\nWould you like to play again? (y/n): ";
             user = getYesOrNo();
-        }
-        else
-        {
+        } else {
             std::cout << "\nEnding program.." << std::endl;
             user = 'N';
         }
-    }
-    while (toupper(user) == 'Y');
+    } while (toupper(user) == 'Y');
 
     return 0;
 }
